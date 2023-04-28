@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Assignment - 02-01</title>
+    <script
+    crossorigin
+    src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        const img = React.createElement("img",{src:"https://www.w3schools.com/howto/img_avatar.png",style:{height:"65%",width:"100%"}},null);
+
+        const name = React.createElement("h3",{style:{textAlign:"center",margin:"0",marginTop:"4px"}},"Dima Blover")
+        const post = React.createElement("span",{style:{textAlign:"center",margin:"0"}},"UI/UX Designer")
+
+        const content1 = React.createElement("h4",{style:{margin:"0"}},"26");
+        const c1 = React.createElement("h5",{style:{margin:"0"}},"Shoot");
+
+        const content2 = React.createElement("h4",{style:{margin:"0"}},"94");
+        const c2 = React.createElement("h5",{style:{margin:"0"}},"Following");
+
+        const content3 = React.createElement("h4",{style:{margin:"0"}},"139");
+        const c3 = React.createElement("h5",{style:{margin:"0"}},"Followers");
+
+        const innerDiv1 = React.createElement("div",{style:{height:"100%",display:"flex",flexDirection:"column",width:"33%",display:"flex",justifyContent:"center",alignItems:"center",gap:"3px"}},[content1,c1]);
+        const innerDiv2 = React.createElement("div",{style:{height:"100%",display:"flex",flexDirection:"column",width:"33%",display:"flex",justifyContent:"center",alignItems:"center",gap:"3px"}},[content2,c2]);
+        const innerDiv3 = React.createElement("div",{style:{height:"100%",display:"flex",flexDirection:"column",width:"33%",display:"flex",justifyContent:"center",alignItems:"center",gap:"3px"}},[content3,c3]);
+
+
+        const innerDiv = React.createElement("div",{style:{height:"50%",width:"99%",display:"flex"}},[innerDiv1,innerDiv2,innerDiv3]);
+        const div1 = React.createElement("div",{style:{height:"35%",width:"100%",display:"flex",flexDirection:"column",gap:"2px"}},[name,post,innerDiv]);
+        const div = React.createElement("div",{style:{height:"400px",width:"350px",boxShadow:"0 0 10px black",margin:"20px auto",display:"flex",flexDirection:"column"}},[img,div1]);
+
+
+        ReactDOM.render(div,document.getElementById("root"))
+    </script>
+</body>
+</html>
