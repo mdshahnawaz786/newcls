@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-02</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        const img = React.createElement("img",{src:"https://media.istockphoto.com/id/1208414307/photo/happy-male-executive-in-office.jpg?s=612x612&w=0&k=20&c=3krD8gIdPmHFVwbcHGyQDXUGlcyzmcWQNyRMRp_93P8=",style:{height:"40%",width:"44%",borderRadius:"50%"}},null);
+        const p1 = React.createElement("p",null,"Alexander")
+        const p2 = React.createElement("p",null,"I enjoyed drinking coffee every day.");
+
+        const h4One = React.createElement("h4",{style:{margin:"0",color:"rgb(158,77,228)"}},"172");
+        const pOne = React.createElement("p",{style:{color:"rgb(158,77,228)"}},"POSTS");
+        const divone = React.createElement("div",{style:{height:"100%",width:"33.33%",display:"flex",flexDirection:"column",alignItems:"center",padding:"5px"}},[h4One,pOne]);
+
+        const h4Two = React.createElement("h4",{style:{margin:"0",color:"rgb(158,77,228)"}},"47");
+        const pTwo = React.createElement("p",{style:{color:"rgb(158,77,228)"}},"FOLLOWERS");
+        const divtwo = React.createElement("div",{style:{height:"100%",width:"33.33%",display:"flex",flexDirection:"column",alignItems:"center",padding:"5px"}},[h4Two,pTwo]);
+
+        const h4Three = React.createElement("h4",{style:{margin:"0",color:"rgb(158,77,228)"}},"20");
+        const pThree = React.createElement("p",{style:{color:"rgb(158,77,228)"}},"FOLLOWING");
+        const divthree = React.createElement("div",{style:{height:"100%",width:"33.33%",display:"flex",flexDirection:"column",alignItems:"center",padding:"5px"}},[h4Three,pThree])
+        
+        const innerdiv = React.createElement("div",{style:{height:"10%",width:"100%",display:"flex",alignItems:"center",padding:"2rem 1.5rem"}},[divone,divtwo,divthree]);
+        
+        const buttonOne = React.createElement("button",{style:{height:"100%",width:"40%",borderRadius:"10px",border:"none",backgroundColor:"rgb(155,69,228)",color:"white"}},"FOLLOW")
+        const buttonTwo = React.createElement("button",{style:{height:"100%",width:"40%",borderRadius:"10px",border:"none",backgroundColor:"rgb(225,58,157)",color:"white"}},"MESSAGE")
+        const innerdivtwo = React.createElement("div",{style:{height:"18%",width:"100%",display:"flex",alignItems:"center",alignItems:"center",justifyContent:"space-around"}},[buttonOne,buttonTwo]);
+
+
+        const div = React.createElement("div",{style:{height:"400px",width:"350px",boxShadow:"0 0 10px black",margin:"auto",display:"flex",flexDirection:"column",alignItems:"center",padding:"2rem 1.5rem"}},[img,p1,p2,innerdiv,innerdivtwo]);
+        ReactDOM.render(div,document.getElementById("root"))
+    </script>
+</body>
+</html>
