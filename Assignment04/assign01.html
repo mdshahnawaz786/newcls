@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-04-01</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const div1 = (
+        <div>
+          <h1>Md Shahnawaz</h1>
+          <p>Software Engineer</p>
+          <div>
+            <a href="">LinkedIn</a>
+            <a href="">Github</a>
+          </div>
+          <hr />
+
+          <h3>Experience</h3>
+          <h4>Software developer at XYZ</h4>
+          <p>
+            I work with amazon in transportation team, some more description
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            ullam! Maxime officiis consequuntur libero eaque reprehenderit
+            quisquam nam ab vitae totam id commodi laborum enim, sint ea odit
+            quasi soluta! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Provident iusto ut praesentium modi. Incidunt atque
+            voluptatem, dignissimos officiis reprehenderit est!
+          </p>
+
+          <hr/>
+          <h3>Skills</h3>
+          <ul>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            </ul>
+            <hr/>
+            <h3>Hobbies</h3>
+            <ol>
+                <li>Riding Bikes</li>
+                <li>Watching Movies</li>
+                <li>Travelling</li>
+                </ol>
+        </div>
+      );
+
+      ReactDOM.render([div1], document.getElementById("root"));
+    </script>
+  </body>
+</html>
