@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-01</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+
+
+    <div id="root"></div>
+
+    <script>
+        
+        const h1 = React.createElement("h1",null,"Topic Covered")
+        const h5 = React.createElement("h5",null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus.");
+        const a1 = React.createElement("a",{href:""},"Getting started with the web");
+        const p1 = React.createElement("p",null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus sed tempore vitae cum consectetur?")
+        const p2 = React.createElement("p",null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus sed tempore vitae cum consectetur?Lorem ipsum dolor sit.")
+        const a2 = React.createElement("a",{href:""},"HTML-structuring the web");
+        const p3 = React.createElement("p",null,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus sed tempore vitae cum consectetur?Lorem ipsum dolor sitLorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus sed tempore.")
+        const a3 = React.createElement("a",{href:""},"CSS-styling the web");
+
+        ReactDOM.render([h1,h5,a1,p1,a2,p2,a3,p3],document.getElementById("root"))
+    </script>
+
+</body>
+</html>
