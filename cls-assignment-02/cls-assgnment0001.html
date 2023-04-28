@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Assignment-02(Resume)</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+              const name = React.createElement("h1",null,"Md Shahnawaz");
+              const post = React.createElement("p",null,"Software Developer");
+
+              const a1 = React.createElement("a",{href:""},"LinkedIn");
+              const a2 = React.createElement("a",{href:""},"Github");
+              const hr = React.createElement("hr",null,null);
+              const aDiv = React.createElement("div",{style:{display:"flex",gap:"5px"}},[a1,a2]);
+
+              const div1 = React.createElement("div",null,[name,post,aDiv,hr]);
+
+              const exp1 = React.createElement("h2",null,"Experience");
+              const exp = React.createElement("h3",null,"Software developer at XYZ");
+              const p = React.createElement("p",{},"I work with amazon in transportation team, some more description Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam! Maxime officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae totam id commodi laborum enim, sint ea odit quasi soluta! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto ut praesentium modi. Incidunt atque voluptatem, dignissimos officiis reprehenderit est!")
+              const div2 = React.createElement("div",null,[exp1,exp,p,hr]);
+              
+              const exp2 = React.createElement("h2",null,"Skills");
+              const li1 = React.createElement("li",null,"Java");
+              const li2 = React.createElement("li",null,"JavaScript");
+              const li3 = React.createElement("li",null,"React");
+              const li4 = React.createElement("li",null,"Redux");
+              const ul = React.createElement("ul",null,[li1,li2,li3,li4]);
+              const div3 = React.createElement("div",null,[exp2,ul,hr]);
+
+
+              const exp3 = React.createElement("h2",null,"Hobbies");
+              const ol1 = React.createElement("li",null,"Riding Bikes");
+              const ol2 = React.createElement("li",null,"Reading Books");
+              const ol3 = React.createElement("li",null,"watching Movies");
+              const ol4 = React.createElement("li",null,"Playing");
+              const ol = React.createElement("ol",null,[ol1,ol2,ol3,ol4]);
+              const div4 = React.createElement("div",null,[exp3,ol,hr]);
+
+
+              ReactDOM.render([div1,div2,div3,div4],document.getElementById("root"))
+    </script>
+  </body>
+</html>
